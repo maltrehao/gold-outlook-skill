@@ -1,0 +1,60 @@
+{
+  "as_of": "2099-01-01",
+  "instrument": "USD gold (synthetic example)",
+  "signals": [
+    {
+      "id": "us_real_yields",
+      "family": "opportunity_cost",
+      "impact": {"short": 1.2, "medium": 0.8, "long": 0.2},
+      "confidence": 0.9,
+      "observation": "Synthetic example: 5y and 10y real yields fell over 20 trading days.",
+      "as_of": "2099-01-01",
+      "source": "synthetic"
+    },
+    {
+      "id": "fed_path",
+      "family": "opportunity_cost",
+      "impact": {"short": 0.6, "medium": 1.0, "long": 0.2},
+      "confidence": 0.75,
+      "observation": "Synthetic example: policy path repriced modestly easier.",
+      "as_of": "2099-01-01",
+      "source": "synthetic"
+    },
+    {
+      "id": "dollar_and_funding",
+      "family": "usd_liquidity",
+      "impact": {"short": -0.8, "medium": -0.4, "long": 0.0},
+      "confidence": 0.8,
+      "observation": "Synthetic example: the dollar strengthened and funding was slightly tighter.",
+      "as_of": "2099-01-01",
+      "source": "synthetic"
+    },
+    {
+      "id": "fiscal_trajectory",
+      "family": "fiscal_credibility",
+      "impact": {"short": 0.0, "medium": 0.7, "long": 1.5},
+      "confidence": {"short": 0.4, "medium": 0.65, "long": 0.8},
+      "observation": "Synthetic example: long-run fiscal risk premium increased.",
+      "as_of": "2099-01-01",
+      "source": "synthetic"
+    },
+    {
+      "id": "official_demand",
+      "family": "risk_official_demand",
+      "impact": {"short": 0.2, "medium": 0.8, "long": 1.2},
+      "confidence": {"short": 0.4, "medium": 0.7, "long": 0.75},
+      "observation": "Synthetic example: lagged official purchases remained firm.",
+      "as_of": "2099-01-01",
+      "source": "synthetic"
+    },
+    {
+      "id": "miners_and_gold_silver",
+      "family": "cross_asset_positioning",
+      "impact": {"short": 0.9, "medium": 0.6, "long": 0.1},
+      "confidence": 0.65,
+      "observation": "Synthetic example: miner breadth improved and both metals rose.",
+      "as_of": "2099-01-01",
+      "source": "synthetic"
+    }
+  ]
+}

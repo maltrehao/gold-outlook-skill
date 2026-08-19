@@ -1,0 +1,32 @@
+name: Validate skill
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile scorer
+        run: python3 -m py_compile analyze-gold-outlook/scripts/score_gold_outlook.py
+      - name: Run regression test
+        run: python3 analyze-gold-outlook/scripts/test_score_gold_outlook.py
+      - name: Check required skill metadata
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          text = Path("analyze-gold-outlook/SKILL.md").read_text(encoding="utf-8")
+          assert text.startswith("---\n")
+          frontmatter = text.split("---", 2)[1]
+          assert "name: analyze-gold-outlook" in frontmatter
+          assert "description:" in frontmatter
+          print("metadata ok")
+          PY
