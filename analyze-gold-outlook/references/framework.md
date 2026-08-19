@@ -7,7 +7,8 @@
 3. Horizon map
 4. Regime interpretation
 5. Instrument translation
-6. Conflict resolution
+6. Technical overlay
+7. Conflict resolution
 
 ## 1. Core pricing identity
 
@@ -71,7 +72,15 @@ USD gold is the global monetary benchmark. RMB gold approximately combines USD g
 
 Gold ETFs add tracking error, fees, liquidity, and—in China—possible premium/discount effects. Gold miners add operational leverage: revenue follows realized gold prices, while profit follows gold prices minus energy, labor, grades, royalties, capex, and financing costs. Miners therefore have higher upside beta but are not “leveraged gold” in every regime.
 
-## 6. Conflict resolution
+## 6. Technical overlay
+
+Use technical analysis as a timing and risk layer on top of the causal framework. Price structure can reveal whether the market is accepting or rejecting the macro thesis before slower data confirm it, but it does not explain the durable source of value by itself. For full rules, read [technical-analysis.md](technical-analysis.md).
+
+In the short horizon, emphasize daily and intraday trend, breakout quality, volatility, volume/open interest, and positioning. In the medium horizon, emphasize daily/weekly structure, the 20/50/200-day trend stack, major swing levels, and whether pullbacks preserve higher lows. In the long horizon, use monthly/weekly structure only as confirmation; fiscal credibility, real rates, and official demand remain the primary thesis drivers.
+
+Treat a macro/technical alignment as higher conviction. When they diverge, do not average them mechanically. Explain whether the technical signal is a likely timing delay, a warning that the macro thesis is already priced, or evidence that the assumed causal regime is wrong.
+
+## 7. Conflict resolution
 
 Resolve conflicting signals in this order:
 
@@ -81,3 +90,4 @@ Resolve conflicting signals in this order:
 4. Distinguish level from change. High real yields with a sharp decline can be tactically bullish while remaining a structural headwind.
 5. Ask which variable is surprising the market. Forecasts depend on change relative to expectations, not only on the absolute data.
 6. Lower conviction when the causal chain is incomplete. Express the view as conditional and specify the confirming trigger.
+7. When macro and technical evidence conflict, state which horizon each belongs to and specify the price or macro event that resolves the conflict.
