@@ -49,7 +49,7 @@ analyze-gold-outlook/
 克隆仓库后，将 `analyze-gold-outlook` 整个目录复制到支持 Skills 的智能体技能目录中。不同客户端的技能目录位置可能不同；核心要求是保留 `SKILL.md`、`references`、`scripts`、`agents` 和 `assets` 的相对结构。
 
 ```bash
-git clone https://github.com/<your-account>/gold-outlook-skill.git
+git clone https://github.com/maltrehao/gold-outlook-skill.git
 cp -R gold-outlook-skill/analyze-gold-outlook <your-skills-directory>/
 ```
 
