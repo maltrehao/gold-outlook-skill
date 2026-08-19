@@ -53,7 +53,7 @@ Official purchases are structural demand but are released with lags and revision
 
 ### Positioning and technical state
 
-Use CFTC managed-money net length, open interest, ETF holdings, options skew when available, price trend, and distance from moving averages. Positioning answers “how vulnerable is the trade?” rather than “what is fair value?” A crowded long can keep rising if the macro catalyst strengthens; treat crowding as an asymmetry modifier.
+Use CFTC managed-money net length, open interest, ETF holdings, options skew when available, price trend, and distance from moving averages. Positioning answers “how vulnerable is the trade?” rather than “what is fair value?” A crowded long can keep rising if the macro catalyst strengthens; treat crowding as an asymmetry modifier. For trend, structure, momentum, volatility, and level-setting rules, read [technical-analysis.md](technical-analysis.md) rather than improvising an indicator checklist.
 
 ## 3. Gold-silver ratio states
 

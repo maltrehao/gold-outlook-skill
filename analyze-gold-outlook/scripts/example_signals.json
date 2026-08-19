@@ -55,6 +55,16 @@
       "observation": "Synthetic example: miner breadth improved and both metals rose.",
       "as_of": "2099-01-01",
       "source": "synthetic"
+    },
+    {
+      "id": "technical_state",
+      "family": "cross_asset_positioning",
+      "horizons": ["short", "medium"],
+      "impact": {"short": 0.7, "medium": 0.3},
+      "confidence": {"short": 0.7, "medium": 0.6},
+      "observation": "Synthetic example: daily structure held a higher low and reclaimed resistance with improving open interest.",
+      "as_of": "2099-01-01",
+      "source": "synthetic"
     }
   ]
 }

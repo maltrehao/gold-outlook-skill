@@ -24,6 +24,7 @@ Current analysis requires browsing. Cite direct pages or releases, not search-re
 | Treasury borrowing and issuance | U.S. Treasury Quarterly Refunding, TBAC materials, Monthly Statement, auction results, debt data |
 | Futures positioning | CFTC Commitments of Traders |
 | USD gold and silver benchmarks | LBMA or recognized exchange/market data with timestamp and contract disclosed |
+| Technical price and derivatives data | A disclosed spot, futures, exchange, or ETF source with adjusted OHLC history; CME or the relevant exchange for volume and open interest |
 | China gold price/premium | Shanghai Gold Exchange and other official exchange data |
 | A-share miner prices and filings | Shanghai/Shenzhen exchanges, company filings, and a disclosed price provider |
 | Gold ETF holdings | Fund sponsor filings/pages or a transparent aggregator with methodology |
@@ -61,5 +62,6 @@ For a full current outlook, try to obtain at least:
 6. Central-bank or official demand for structural context.
 7. RMB gold and USD/CNY when serving a China-based investor.
 8. A-share pure-play gold basket breadth, excess return, and attribution when using miner signals.
+9. Adjusted OHLC history, volume/open interest when available, and the exact instrument/contract used for technical analysis.
 
 If several elements are unavailable, produce a scoped answer and clearly list the missing evidence that could change the conclusion.

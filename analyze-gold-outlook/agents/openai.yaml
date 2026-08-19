@@ -1,13 +1,13 @@
 interface:
-  display_name: 黄金多周期研判
-  short_description: 融合宏观、跨资产与黄金股信号，研判黄金多周期走势框架
-  default_prompt: 使用 $analyze-gold-outlook 分析当前黄金的短期、中期和长期走势。
-  icon_small: assets/icon.svg
-  icon_large: assets/icon.svg
+  display_name: "黄金多周期研判"
+  short_description: "融合宏观、技术面、跨资产与黄金股信号的多周期黄金研判"
+  default_prompt: "使用 $analyze-gold-outlook 分析当前黄金短中长期走势，完整解释证据、因果传导与技术面确认，并给出失效条件。"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
 policy:
   products:
-  - chatgpt
-  - codex
-  - api
-  - atlas
+  - "chatgpt"
+  - "codex"
+  - "api"
+  - "atlas"
   allow_implicit_invocation: true

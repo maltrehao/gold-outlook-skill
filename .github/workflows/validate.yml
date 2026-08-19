@@ -30,3 +30,27 @@ jobs:
           assert "description:" in frontmatter
           print("metadata ok")
           PY
+      - name: Check explanation and technical-analysis contracts
+        run: |
+          python3 - <<'PY'
+          import json
+          import re
+          from pathlib import Path
+
+          root = Path("analyze-gold-outlook")
+          skill = (root / "SKILL.md").read_text(encoding="utf-8")
+          template = (root / "references/output-template.md").read_text(encoding="utf-8")
+          agents = Path("AGENTS.md").read_text(encoding="utf-8")
+          signals = json.loads((root / "scripts/example_signals.json").read_text(encoding="utf-8"))
+
+          assert "## Required Analytical Narrative" in skill
+          assert "references/technical-analysis.md" in skill
+          assert (root / "references/technical-analysis.md").is_file()
+          assert "## 2. Explanation contract" in template
+          assert not re.search(r"[\u3400-\u4dbf\u4e00-\u9fff]", agents)
+
+          technical = next(item for item in signals["signals"] if item["id"] == "technical_state")
+          assert technical["family"] == "cross_asset_positioning"
+          assert "long" not in technical["horizons"]
+          print("analysis contracts ok")
+          PY

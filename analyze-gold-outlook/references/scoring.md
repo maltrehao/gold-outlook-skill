@@ -29,6 +29,8 @@ Assign confidence from 0 to 1. Use 0.8–1.0 for timely, primary, direct data wi
 
 Every signal entry should include `impact`, `confidence`, `observation`, `as_of`, and `source`. A signal may specify horizon-specific impacts when the same fact has different effects, such as heavy Treasury coupon issuance being tactically bearish but structurally bullish through fiscal credibility.
 
+Represent the full technical diagnosis as one `technical_state` signal in `cross_asset_positioning`. Do not enter moving averages, RSI, MACD, support/resistance, and volatility as separate votes. Technical impact should normally be concentrated in the short horizon, smaller in the medium horizon, and zero or omitted in the long horizon unless a multi-year price structure is explicitly relevant.
+
 ## 3. Family-balanced aggregation
 
 The script first computes a confidence-weighted average within each family, then applies fixed family weights by horizon. This prevents three correlated rate indicators from outvoting every other family.
