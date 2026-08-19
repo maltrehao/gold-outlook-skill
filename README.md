@@ -60,6 +60,24 @@ cp -R gold-outlook-skill/analyze-gold-outlook <your-skills-directory>/
 重点判断 A 股黄金股是否领先，并给出基准、牛市、熊市情景和失效条件。
 ```
 
+## Agent 调用说明
+
+仓库根目录提供了 [AGENTS.md](AGENTS.md)，用于告诉 Codex、Claude Code 等代码 Agent 如何识别、加载和执行本 Skill。Agent 进入仓库后应先完整读取 `analyze-gold-outlook/SKILL.md`，再根据问题按需加载参考文件，而不是一次性把所有资料放入上下文。
+
+支持显式 Skill 调用的客户端可以直接使用：
+
+```text
+使用 $analyze-gold-outlook 分析当前美元金和人民币金的短期、中期和长期走势，
+判断 A 股黄金股是否构成前瞻信号，并给出验证条件和失效条件。
+```
+
+不支持 `$skill-name` 语法的 Agent，可以使用路径调用：
+
+```text
+请先读取并严格遵循 analyze-gold-outlook/SKILL.md，
+然后分析当前黄金未来一个月、一个季度和两年的走势。
+```
+
 ## 可审计评分器
 
 评分器接受人工或智能体基于证据映射后的 `impact`（-2 到 +2）和 `confidence`（0 到 1）。它先在因子家族内部聚合，再按期限加权，防止多个高度相关的利率指标被重复计算。
